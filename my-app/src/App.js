@@ -43,11 +43,15 @@ class App extends React.Component {
     console.log('this is the followersArray??', this.state.followersArray);
     return (
       <div className="App">
+        <div>
+          <h1>Hello, {this.state.mainUser.name}</h1>
+          <img width="250px" src={this.state.mainUser.avatar_url} alt={this.state.mainUser.name}/>
+        </div>
         <h1>Say Hello To Your Followers!</h1>
         <div className="followers">
           {this.state.followersArray.map(followers => (
-            <div className="follower-tile">
-              <img width="200px" src={followers.avatar_url} key={followers.id} alt={followers.login} />
+            <div className="follower-tile" key={followers.id}>
+              <img width="200px" src={followers.avatar_url}  alt={followers.login} />
               <p>{followers.login}</p> 
             </div>
           ))}
