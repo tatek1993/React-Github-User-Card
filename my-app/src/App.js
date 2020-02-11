@@ -7,7 +7,7 @@ import styled from 'styled-components/macro';
 const MainUserDiv = styled.div `
   border: 10px dashed #FFC914;
   border-radius: 50%;
-  width: 25%;
+  width: 30%;
   padding: 7%;
   margin: 3%;
   background-color: rgba(23, 190, 187, 0.5);
@@ -16,6 +16,7 @@ const MainUserDiv = styled.div `
 const Header = styled.h1 `
   color: #FFC914;
   font-size: 2.5rem;
+  text-shadow: 3px 3px #E4572E;
 `
 const Image = styled.img `
   border-radius: 50%;
@@ -28,6 +29,7 @@ const FollowerDiv = styled.div `
   margin: 2.5%;
   color: #FFC914;
   font-size: 1.7rem;
+  text-shadow: 1px 1px #E4572E;
 `
 
 
