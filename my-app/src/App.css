@@ -1,5 +1,14 @@
+body {
+  background-color: #2E282A;
+}
+
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
 }
 
 .App-logo {
@@ -26,6 +35,17 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.followers {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 10px dashed #FFC914;
+  border-radius: 50%;
+  background-color: rgba(23, 190, 187, 0.5);
 }
 
 @keyframes App-logo-spin {
